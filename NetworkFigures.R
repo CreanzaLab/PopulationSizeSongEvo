@@ -15,7 +15,7 @@ alph =  3# difficulty to learn, against adaptive evolution of trait
 bet = 1 #variance in learning attempts, favors adaptive evolution
 Npop = 40 #Needs to be even
 
-reps = 1 #right now the plotting function only takes the last replicate anyway
+reps = 1 
 
 
 g10 <- sample_degseq(rep(10,Npop),method="vl") #Makes a Npop-member network with degree of 10 for all
