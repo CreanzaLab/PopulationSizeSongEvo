@@ -1,3 +1,5 @@
+#Code to accompany Hudson and Creanza 2022, "Modeling how population size drives the evolution of birdsong, a functional cultural trait" https://doi.org/10.1111/evo.14489
+
 
 # Set up ------------------------------------------------------------------
 
