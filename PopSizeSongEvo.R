@@ -1,5 +1,6 @@
 #Code to accompany Hudson and Creanza 2022, "Modeling how population size drives the evolution of birdsong, a functional cultural trait" https://doi.org/10.1111/evo.14489
 
+#Note that these simulations can be time consuming to run; we recommend decreasing the number of replicates (reps) for testing or troubleshooting.
 
 # Set up ------------------------------------------------------------------
 
@@ -446,8 +447,8 @@ pheatmap(stripemat,cluster_rows = F, cluster_cols = F,border_color=NA,color = co
 
 Npopvals <- c(100,200,300,400)
 Kvals <- seq(from=5,to=100,by=10)
-reps=3
-gens=5
+reps=20
+gens=50
 alph = 3
 bet = 1
 
@@ -693,8 +694,8 @@ abline(v=phase1gens, col="red")
 Npopvals <- c(100)
 alphavals <- c(2,3,4,5,6)
 Kvals <- seq(from=5,to=100,by=10)
-reps=1
-gens=5
+reps=20
+gens=50
 finalZ <- rep(0,reps)
 Kresults<- matrix(0,nrow = length(alphavals), ncol = length(Kvals))
 Npop = Npopvals
@@ -735,8 +736,8 @@ pheatmap(varyingAlpha,cluster_rows = F, cluster_cols = F,border_color=NA,color =
 Npopvals <- c(100)
 betavals <- c(0.25,0.5,1,1.5,2)
 Kvals <- seq(from=5,to=100,by=10)
-reps=1
-gens=5
+reps=20
+gens=50
 finalZ <- rep(0,reps)
 Kresults<- matrix(0,nrow = length(betavals), ncol = length(Kvals))
 Npop = Npopvals
